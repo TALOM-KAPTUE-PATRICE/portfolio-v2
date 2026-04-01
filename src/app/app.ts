@@ -1,11 +1,13 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './layout/header/header';
 import { Footer } from './layout/footer/footer';
+import{ ThemeService } from './core/services/theme.service';
+
 
 @Component({
   selector: 'app-root',
-  imports: [
+  imports: [   
     RouterOutlet,
     Header,
     Footer
@@ -13,6 +15,7 @@ import { Footer } from './layout/footer/footer';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
+
 export class App {
-  protected readonly title = signal('portfolio-v2');
+  private themeService = inject(ThemeService); // Initialise le service et ses effets
 }
