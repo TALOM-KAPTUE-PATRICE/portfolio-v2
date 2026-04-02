@@ -126,6 +126,14 @@
   transition: color 0.2s;
 }
 
+.active-link {
+  color: var(--primary) !important;
+  font-weight: 700;
+}
+
+.active-link::after {
+  width: 100% !important;
+}
 .mobile-theme-selector {
   margin-top: 3rem;
   text-align: center;

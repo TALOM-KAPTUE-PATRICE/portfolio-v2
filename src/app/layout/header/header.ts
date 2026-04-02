@@ -1,11 +1,12 @@
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { ThemeService, ThemeMode } from '../../core/services/theme.service';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
@@ -15,10 +16,12 @@ export class Header {
   isMenuOpen = signal(false);
 
   navItems = [
-    { label: 'Accueil', link: '#' },
-    { label: 'Projets', link: '#projects' },
-    { label: 'Expertise IA', link: '#ai' },
-    { label: 'Contact', link: '#contact' }
+    { label: 'Accueil', link: '/' },
+    { label: 'À Propos', link: '/about' },
+    { label: 'Expertise', link: '/skills' },
+    { label: 'Projets', link: '/projects' },
+    { label: 'Parcours', link: '/experience' },
+    { label: 'Contact', link: '/contact' }
   ];
 
   changeTheme(mode: ThemeMode) {
