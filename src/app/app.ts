@@ -6,6 +6,9 @@ import{ ThemeService } from './core/services/theme.service';
 import { Projects } from './features/projects/projects';
 import { Skills } from './features/skills/skills';
 import { Hero } from './features/hero/hero';
+import { About } from './features/about/about';
+import { Experience } from './features/experience/experience';
+import { Contact } from './features/contact/contact';
 
 
 @Component({
@@ -16,7 +19,10 @@ import { Hero } from './features/hero/hero';
     Footer,
     Projects,
     Skills,
-    Hero
+    Hero,
+    About,
+    Experience,
+    Contact
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'

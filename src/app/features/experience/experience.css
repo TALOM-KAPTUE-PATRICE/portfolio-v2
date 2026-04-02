@@ -1,0 +1,25 @@
+.experience-section { padding: 6rem 2rem; background: var(--bg-secondary); }
+.timeline { position: relative; max-width: 800px; margin: 4rem auto 0; padding-left: 2rem; border-left: 2px solid var(--border-color); }
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.timeline-item { position: relative; margin-bottom: 4rem; animation: slideUp 0.5s ease-out forwards; }
+.timeline-dot { 
+  position: absolute; left: -2.6rem; top: 5px; width: 18px; height: 18px; 
+  background: var(--primary); border-radius: 50%; border: 4px solid var(--bg-secondary);
+  box-shadow: 0 0 0 4px var(--primary-transparent);
+}
+
+.timeline-content { background: var(--bg-primary); padding: 2rem; border-radius: 20px; border: 1px solid var(--border-color); transition: transform 0.3s; }
+.timeline-content:hover { transform: scale(1.02); border-color: var(--primary); }
+
+.period { color: var(--primary); font-weight: 700; font-size: 0.9rem; }
+.company { color: var(--text-muted); margin-bottom: 1rem; }
+.achievement-list { padding-left: 1.2rem; margin: 1rem 0; color: var(--text-muted); }
+.achievement-list li { margin-bottom: 0.5rem; position: relative; list-style: none; }
+.achievement-list li::before { content: "→"; position: absolute; left: -1.2rem; color: var(--primary); }
+
+.tech-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.5rem; }
+.tag { font-size: 0.7rem; background: var(--bg-secondary); padding: 4px 10px; border-radius: 4px; font-weight: 600; }

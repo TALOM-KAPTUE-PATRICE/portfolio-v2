@@ -1,1 +1,42 @@
-<p>contact works!</p>
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-header center">
+      <h2 class="gradient-text">Démarrons un projet</h2>
+      <p>Disponible pour des opportunités Fullstack, DevOps ou des défis IA.</p>
+    </div>
+
+    <div class="contact-wrapper">
+      <!-- Quick Links -->
+      <div class="contact-methods">
+        <div class="contact-card" (click)="openWhatsApp()">
+          <div class="icon">💬</div>
+          <h4>WhatsApp</h4>
+          <p>Réponse rapide</p>
+          <span class="link">Envoyer un message →</span>
+        </div>
+        <div class="contact-card">
+          <div class="icon">📧</div>
+          <h4>E-mail</h4>
+          <p>{{ contactEmail }}</p>
+          <a [href]="'mailto:' + contactEmail" class="link">M'écrire un mail →</a>
+        </div>
+      </div>
+
+      <!-- Professional Form (opens mail client on submit) -->
+      <form #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" ngModel placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="subject" ngModel placeholder="Sujet" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" ngModel placeholder="Votre message" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn-primary contact-submit-btn">Envoyer par Email</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
