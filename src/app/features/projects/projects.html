@@ -1,1 +1,55 @@
-<p>projects works!</p>
+
+<section id="projects" class="projects-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="gradient-text">Projets Récents</h2>
+      <p class="subtitle">Des solutions robustes combinant robustesse Backend et innovation IA.</p>
+    </div>
+
+    <!-- Filtres Dynamiques -->
+    <div class="filter-group">
+      @for (cat of categories; track cat) {
+        <button 
+          (click)="selectedCategory.set(cat)"
+          [class.active]="selectedCategory() === cat"
+          class="filter-btn">
+          {{ cat }}
+        </button>
+      }
+    </div>
+
+    <!-- Grille de Projets -->
+    <div class="projects-grid">
+      @for (project of filteredProjects(); track project.id) {
+        <article class="project-card">
+          <div class="card-image">
+            <span class="category-badge">{{ project.category }}</span>
+            <img [src]="project.thumbnailUrl" [alt]="project.title" loading="lazy">
+          </div>
+          
+          <div class="card-content">
+            <h3>{{ project.title }}</h3>
+            <p class="description">{{ project.description }}</p>
+            
+            <ul class="highlights">
+              @for (point of project.technicalHighlights; track point) {
+                <li><i class="icon-check"></i> {{ point }}</li>
+              }
+            </ul>
+
+            <div class="tech-stack">
+              @for (tech of project.technologies; track tech) {
+                <span class="tech-pill">{{ tech }}</span>
+              }
+            </div>
+
+            <div class="card-actions">
+              <a [href]="project.githubUrl" target="_blank" class="btn-icon">Code Source</a>
+              <a [href]="project.demoUrl" target="_blank" class="btn-primary">Live Demo</a>
+            </div>
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>
