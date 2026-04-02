@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+
 :root {
   /* Palette Claire */
   --primary: oklch(65% 0.2 260);    /* Bleu électrique moderne */
@@ -29,4 +30,5 @@ body {
   font-family: 'Inter', sans-serif; /* Pensez à l'ajouter dans l'index.html */
   margin: 0;
   transition: background-color 0.3s ease;
+  
 }

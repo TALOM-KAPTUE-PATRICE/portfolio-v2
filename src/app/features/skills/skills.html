@@ -1,1 +1,25 @@
-<p>skills works!</p>
+<section id="skills" class="skills-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="gradient-text">Expertise Technique</h2>
+      <p>Un stack technologique moderne pour des solutions scalables et intelligentes.</p>
+    </div>
+
+    <div class="skills-grid">
+      @for (category of categories(); track category.title) {
+        <div class="skill-card" [style.--accent-color]="category.color">
+          <div class="card-icon">{{ category.icon }}</div>
+          <h3>{{ category.title }}</h3>
+          <ul class="skill-list">
+            @for (skill of category.skills; track skill) {
+              <li>
+                <span class="dot"></span>
+                {{ skill }}
+              </li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+</section>
