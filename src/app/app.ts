@@ -3,9 +3,6 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './layout/header/header';
 import { Footer } from './layout/footer/footer';
 import{ ThemeService } from './core/services/theme.service';
-import { Projects } from './features/projects/projects';
-import { Skills } from './features/skills/skills';
-import { Hero } from './features/hero/hero';
 
 
 @Component({
@@ -14,9 +11,6 @@ import { Hero } from './features/hero/hero';
     RouterOutlet,
     Header,
     Footer,
-    Projects,
-    Skills,
-    Hero
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'

@@ -1,0 +1,10 @@
+.router-container {
+  margin-top: 70px; /* Hauteur de votre header */
+  min-height: calc(100vh - 70px);
+}
+
+/* Animation de transition de page personnalisée */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.5s;
+}
