@@ -1,0 +1,10 @@
+[build]
+  # La commande pour construire l'application en mode production
+  command = "npm run build"
+  # Le dossier de sortie généré par Angular 21
+  publish = "dist/portfolio-v2/browser"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
