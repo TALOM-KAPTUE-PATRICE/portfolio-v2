@@ -1,4 +1,4 @@
-.experience-section { padding: 6rem 2rem; background: var(--bg-secondary); }
+.experience-section { padding: var(--section-padding) 2rem; background: var(--bg-secondary); }
 .timeline { position: relative; max-width: 800px; margin: 4rem auto 0; padding-left: 2rem; border-left: 2px solid var(--border-color); }
 .section-header {
   text-align: center;

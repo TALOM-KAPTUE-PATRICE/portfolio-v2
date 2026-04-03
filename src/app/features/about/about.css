@@ -1,4 +1,4 @@
-.about-section { padding: 8rem 2rem; background: var(--bg-primary); }
+.about-section { padding: var(--section-padding) 2rem; background: var(--bg-primary); }
 .grid-layout { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 5rem; align-items: center; }
 
 .image-wrapper { position: relative; border-radius: 30px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }

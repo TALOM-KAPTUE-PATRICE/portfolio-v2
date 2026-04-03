@@ -3,17 +3,28 @@
     <div class="hero-text">
       <span class="badge-devops">Fullstack & AI Architect</span>
       <h1 class="hero-title">
-        Propulser l'Entreprise avec <span class="gradient-text">l'IA</span> et le <span class="gradient-text">Cloud</span>.
+        Propulser l'Entreprise avec <span class="gradient-text">l'IA</span> et le <span
+          class="gradient-text">Cloud</span>.
       </h1>
       <p class="hero-description">
-        Je conçois des architectures backend robustes avec <strong>Spring Boot</strong>, 
-        des interfaces ultra-fluides en <strong>Angular</strong>, tout en intégrant la puissance de 
-        l'<strong>IA Générative</strong> et l'efficacité <strong>DevOps</strong>.
+        Je suis un architecte Fullstack chevronné, spécialisé dans la conception et l'implémentation d'applications
+        d'entreprise
+        hautement scalables avec **Spring Boot (microservices, sécurité JWT, Kafka)**. Mon expertise s'étend à la
+        création
+        d'interfaces utilisateur **Angular (Signals, SSR, Web Components)** fluides et réactives, enrichies par
+        l'intégration
+        de solutions d'**IA Générative (LLMs, RAG)** et optimisées par des pratiques **DevOps (Kubernetes, CI/CD)**
+        rigoureuses.
       </p>
-      
+
       <div class="hero-actions">
-        <a href="#projects" class="btn-primary">Explorer mes projets</a>
-        <a href="#contact" class="btn-outline">Me contacter</a>
+        <a [routerLink]="['/projects']" class="btn-primary">
+          Explorer mes projets
+        </a>
+
+        <a [routerLink]="['/contact']" class="btn-outline">
+          Me contacter
+        </a>
       </div>
     </div>
 
@@ -21,7 +32,9 @@
       <div class="abstract-shape">
         <!-- Une illustration SVG moderne représentant la fusion Code/IA -->
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path fill="var(--primary)" d="M44.7,-76.4C58.1,-69.2,69.2,-57.4,76.4,-43.7C83.6,-30,86.9,-15,85.8,-0.6C84.7,13.7,79.2,27.5,71.1,39.8C63,52.1,52.3,63,39.7,70.7C27.1,78.4,12.6,83,0.3,82.5C-12,82,-24,76.4,-35.6,68.2C-47.2,60,-58.4,49.2,-66.8,36.5C-75.2,23.8,-80.8,9.2,-80.3,-5.2C-79.8,-19.6,-73.2,-33.8,-63.8,-45.1C-54.4,-56.4,-42.2,-64.8,-29.4,-72.4C-16.6,-80,-8.3,-86.8,4.1,-87.5C16.5,-88.2,31.3,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
+          <path fill="var(--primary)"
+            d="M44.7,-76.4C58.1,-69.2,69.2,-57.4,76.4,-43.7C83.6,-30,86.9,-15,85.8,-0.6C84.7,13.7,79.2,27.5,71.1,39.8C63,52.1,52.3,63,39.7,70.7C27.1,78.4,12.6,83,0.3,82.5C-12,82,-24,76.4,-35.6,68.2C-47.2,60,-58.4,49.2,-66.8,36.5C-75.2,23.8,-80.8,9.2,-80.3,-5.2C-79.8,-19.6,-73.2,-33.8,-63.8,-45.1C-54.4,-56.4,-42.2,-64.8,-29.4,-72.4C-16.6,-80,-8.3,-86.8,4.1,-87.5C16.5,-88.2,31.3,-83.6,44.7,-76.4Z"
+            transform="translate(100 100)" />
         </svg>
         <div class="floating-tech">
           <span class="tech-icon spring">🍃</span>

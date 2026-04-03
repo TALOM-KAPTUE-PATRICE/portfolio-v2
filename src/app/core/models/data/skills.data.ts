@@ -2,27 +2,27 @@ import { SkillCategory } from '../skills.model';
 
 export const SKILLS_DATA: SkillCategory[] = [
   {
-    title: 'Frontend Mastery',
-    icon: '🅰️',
+    title: 'Frontend Architecture',
+    icon: 'angular',
     color: 'oklch(65% 0.2 260)',
-    skills: ['Angular 21 (Signals, SSR)', 'TypeScript 5', 'RxJS', 'Tailwind CSS']
+    skills: ['Angular 21 (Signals, Zoneless)', 'Architecture SSR & Hydratation', 'State Management (NgRx/Signals)', 'Micro-Frontends & Module Federation']
   },
   {
-    title: 'Backend & Architecture',
-    icon: '🍃',
+    title: 'Backend Engineering',
+    icon: 'spring',
     color: 'oklch(70% 0.15 140)',
-    skills: ['Spring Boot 3', 'Microservices', 'PostgreSQL / NoSQL', 'Keycloak (Security)']
+    skills: ['Spring Boot 3.4 (Virtual Threads)', 'Architecture Hexagonale/Clean', 'Event-Driven (Kafka/RabbitMQ)', 'Security (Keycloak, OAuth2, JWT)']
   },
   {
-    title: 'DevOps & Automatisation',
-    icon: '🚀',
+    title: 'Cloud & DevOps',
+    icon: 'devops',
     color: 'oklch(60% 0.15 30)',
-    skills: ['Docker & Kubernetes', 'CI/CD (GitHub Actions)', 'Terraform', 'AWS/Azure']
+    skills: ['Orchestration Kubernetes (K8s)', 'Infrastructure as Code (Terraform)', 'Pipelines CI/CD (Jenkins, Actions)', 'Observabilité (Prometheus, Grafana)']
   },
   {
-    title: 'AI & Data Science',
-    icon: '🧠',
+    title: 'AI & Intelligent Systems',
+    icon: 'ai',
     color: 'oklch(70% 0.15 320)',
-    skills: ['LLM Integration (RAG)', 'Python / PyTorch', 'HuggingFace', 'Vector Databases']
+    skills: ['Intégration LLM (OpenAI, Anthropic)', 'Retrieval-Augmented Generation (RAG)', 'Vector DBs (Chroma, Pinecone)', 'Agentic Workflows (LangChain)']
   }
 ];
