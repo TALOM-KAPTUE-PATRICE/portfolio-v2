@@ -3,6 +3,7 @@
   padding: 4rem 2rem 2rem;
   border-top: 1px solid var(--border-color);
   margin-top: 4rem;
+  margin-top: 0; /* Suppression de la marge car gérée par router-container */
 }
 
 .footer-content {
@@ -19,6 +20,16 @@
   margin-bottom: 1rem;
   color: var(--primary);
 }
+
+.footer-info p { margin: 0.5rem 0; font-weight: 500; }
+.footer-tech-minimal { font-size: 0.8rem; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; }
+
+.footer-social-group { display: flex; flex-direction: column; align-items: flex-end; gap: 0.8rem; }
+.follow-text { 
+  margin: 0; font-size: 0.85rem; font-weight: 800; text-transform: uppercase; 
+  color: var(--secondary); letter-spacing: 2px; position: relative;
+}
+.follow-text::after { content: ''; position: absolute; bottom: -4px; right: 0; width: 30px; height: 2px; background: var(--secondary); }
 
 .footer-socials {
   display: flex;
@@ -61,11 +72,17 @@
 }
 
 @media (max-width: 768px) {
-  .footer-content, .footer-bottom {
+  .footer-content, .footer-bottom, .footer-social-group {
     grid-template-columns: 1fr;
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
+    align-items: center;
+  }
+  .devops-badge {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 4px 12px;
   }
   .footer-socials {
     justify-content: center;

@@ -1,10 +1,21 @@
-<app-header></app-header>
+<app-header id="top"></app-header>
 
 
 <main class="router-container">
-  <!-- Les composants de features s'afficheront ici un par un -->
+  <!-- Les composants de features s'afficheront ici un par un avec des animations -->
   <router-outlet />
 </main>
 
 
 <app-footer></app-footer>
+
+<!-- Back to top button -->
+<button 
+  class="back-to-top" 
+  [class.visible]="showScrollButton()"
+  (click)="scrollToTop()" 
+  title="Retour en haut">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
+</button>

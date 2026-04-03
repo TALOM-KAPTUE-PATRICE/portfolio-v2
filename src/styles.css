@@ -2,6 +2,7 @@
 
 
 :root {
+  scroll-behavior: smooth;
   /* Palette Claire */
   --primary: oklch(65% 0.2 260);    /* Bleu électrique moderne */
   --secondary: oklch(70% 0.15 320);  /* Violet vibrant */
@@ -12,6 +13,10 @@
   --nav-bg: oklch(100% 0 / 80%);
   --border-color: oklch(90% 0.02 260);
   --primary-transparent: oklch(65% 0.2 260 / 15%);
+
+  /* Espacements optimisés pour rapprocher le contenu du header */
+  --layout-spacing: clamp(1.5rem, 4vh, 2.5rem); 
+  --section-padding: clamp(1rem, 3vh, 2rem);
 }
 
 .dark {
@@ -30,5 +35,147 @@ body {
   font-family: 'Inter', sans-serif; /* Pensez à l'ajouter dans l'index.html */
   margin: 0;
   transition: background-color 0.3s ease;
-  
+}
+
+/* Conteneur de routage pour marges Header/Footer identiques */
+.router-container {
+  margin-top: 70px; /* Hauteur fixe du header */
+  padding: var(--layout-spacing) 0;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Important pour les animations de glissement */
+}
+
+/* Unification de tous les titres de sections pour un rendu Woah */
+.section-header h1.gradient-text,
+.about-text .gradient-text,
+.section-header h2.gradient-text, /* Ajout de h2 pour les titres de sous-sections */
+.projects-section .section-header h2.gradient-text, /* Spécificité pour les projets */
+.hero-title,
+.contact-hero-title {
+  text-align: center;
+  font-size: clamp(2.2rem, 6vw, 3.8rem); /* Taille massive et pro */
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, var(--text-color) 0%, var(--primary) 50%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.02em;
+}
+
+/* Actions des cartes de projets */
+.card-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap; /* Assure le responsive sur petits écrans */
+}
+
+.btn-code, .btn-demo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none; /* Supprime le soulignement */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+/* Style Ghost pour le Code Source */
+.btn-code {
+  background: var(--bg-secondary);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.btn-code:hover {
+  background: var(--border-color);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* Style Full pour le Live Demo */
+.btn-demo {
+  background: var(--primary);
+  color: white;
+  border: 1px solid var(--primary);
+  box-shadow: 0 4px 12px var(--primary-transparent);
+}
+
+.btn-demo:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--primary-transparent);
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 20px var(--primary-transparent);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.back-to-top:hover {
+  transform: translateY(-5px);
+  background: var(--secondary);
+}
+
+/* --- Stratégie View Transitions (Angular 21) --- */
+
+/* Personnalisation de la transition globale */
+::view-transition-old(root) {
+  animation: 400ms cubic-bezier(0.4, 0, 0.2, 1) both fade-out,
+             400ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+}
+
+::view-transition-new(root) {
+  animation: 400ms cubic-bezier(0.4, 0, 0.2, 1) both fade-in,
+             400ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+}
+
+/* Keyframes pour un rendu ultra-fluide */
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+@keyframes fade-out {
+  to { opacity: 0; }
+}
+@keyframes slide-from-right {
+  from { transform: translateX(30px); }
+}
+@keyframes slide-to-left {
+  to { transform: translateX(-30px); }
+}
+
+/* Optimisation pour les utilisateurs préférant moins de mouvements */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(root) {
+    animation: none;
+  }
 }
