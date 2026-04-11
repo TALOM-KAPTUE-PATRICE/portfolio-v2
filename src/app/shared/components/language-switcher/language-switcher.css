@@ -1,0 +1,52 @@
+.lang-pill {
+  display: flex;
+  align-items: center;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 4px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  width: 85px;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.active-indicator {
+  position: absolute;
+  width: 38px;
+  height: calc(100% - 8px);
+  background: var(--primary);
+  border-radius: 50px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.active-indicator.is-en {
+  transform: translateX(39px);
+}
+
+.lang-label {
+  flex: 1;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.lang-label.active {
+  color: white;
+}
+
+.globe-icon {
+  position: absolute;
+  right: -20px;
+  opacity: 0.5;
+}
+
+/* Adaptation Mobile : On peut l'agrandir un peu pour le menu mobile */
+@media (max-width: 768px) {
+  .lang-pill { transform: scale(1.1); margin: 1rem 0; }
+}

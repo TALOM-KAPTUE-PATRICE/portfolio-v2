@@ -17,8 +17,9 @@ import{ ThemeService } from './core/services/theme.service';
   styleUrl: './app.css',
 })
 export class App {
+
   private themeService = inject(ThemeService); // Initialise le service et ses effets
-  
+
   showScrollButton = signal(false);
 
   @HostListener('window:scroll')
@@ -27,10 +28,14 @@ export class App {
     this.showScrollButton.set(window.scrollY > 400);
   }
 
+
+  
   scrollToTop() {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   }
+
+
 }

@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "expertise": "Expertise",
+    "projects": "Projects",
+    "experience": "Journey",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Fullstack & AI Architect",
+    "title": "Propelling Enterprise with",
+    "ia": "AI",
+    "and": "and",
+    "cloud": "Cloud",
+    "description": "I am a seasoned Fullstack Architect, specializing in the design and implementation of highly scalable enterprise applications with **Spring Boot (microservices, JWT security, Kafka)**. My expertise extends to creating fluid and reactive **Angular (Signals, SSR, Web Components)** user interfaces, enriched by the integration of **Generative AI (LLMs, RAG)** solutions and optimized by rigorous **DevOps (Kubernetes, CI/CD)** practices.",
+    "cta_projects": "Explore my projects",
+    "cta_contact": "Contact me"
+  },
+  "languageSwitcher": {
+    "ariaLabel": "Change language"
+  },
+  "footer": {
+    "followMe": "Follow me",
+    "rights": "All rights reserved",
+    "verified": "Verified CI/CD",
+    "location": "Fullstack & AI • Based in Douala, CM (Remote Friendly)"
+  }
+}

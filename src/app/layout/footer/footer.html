@@ -3,12 +3,12 @@
 
     <div class="footer-info">
       <h3>Patrice TALOM KAPTUE</h3>
-      <p>Fullstack & IA • Basé à Douala, CM (Remote Friendly)</p>
+      <p>{{ 'footer.location' | translate }}</p>
       <div class="footer-tech-minimal">Spring Boot • Angular • DevOps</div>
     </div>
 
     <div class="footer-social-group">
-      <p class="follow-text">Suivez-moi</p>
+      <p class="follow-text">{{ 'footer.followMe' | translate }}</p>
       <div class="footer-socials">
         <a href="https://github.com/TALOM-KAPTUE-PATRICE/" class="social-icon" title="GitHub">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -28,7 +28,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; {{ currentYear }} - Tous droits réservés</p>
-    <div class="devops-badge">CI/CD Verifié</div>
+    <p>&copy; {{ currentYear }} - {{ 'footer.rights' | translate }}</p>
+    <div class="devops-badge">{{ 'footer.verified' | translate }}</div>
   </div>
 </footer>
