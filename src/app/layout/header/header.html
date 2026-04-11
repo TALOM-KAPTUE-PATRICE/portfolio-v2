@@ -11,10 +11,12 @@
           <a [routerLink]="item.link" 
              routerLinkActive="active-link" 
              [routerLinkActiveOptions]="{exact: true}"
-             class="nav-item">{{ item.label }}</a>
+             class="nav-item">{{ item.label | translate }}</a>
         </li>
       }
     </ul>
+
+    <app-language-switcher />
 
     <div class="actions">
       <!-- Theme Switcher -->
@@ -47,10 +49,12 @@
              routerLinkActive="active-link"
              [routerLinkActiveOptions]="{exact: true}"
              class="mobile-nav-item" 
-             (click)="isMenuOpen.set(false)">{{ item.label }}</a>
+             (click)="isMenuOpen.set(false)">{{ item.label | translate }}</a>
         </li>
       }
     </ul>
+
+    <app-language-switcher />
     
     <div class="mobile-theme-selector">
       <p>Thème</p>

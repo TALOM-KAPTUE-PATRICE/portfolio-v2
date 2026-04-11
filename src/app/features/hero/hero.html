@@ -1,30 +1,17 @@
-<section class="hero-section">
+<section class="hero-section"> <!-- Supprimez *if="true" si présent -->
   <div class="hero-content">
     <div class="hero-text">
-      <span class="badge-devops">Fullstack & AI Architect</span>
+      <span class="badge-devops">{{ 'hero.badge' | translate }}</span>
       <h1 class="hero-title">
-        Propulser l'Entreprise avec <span class="gradient-text">l'IA</span> et le <span
-          class="gradient-text">Cloud</span>.
+        {{ 'hero.title' | translate }} <span class="gradient-text">{{ 'hero.ia' | translate }}</span> {{ 'hero.and' | translate }} <span
+          class="gradient-text">{{ 'hero.cloud' | translate }}</span>.
       </h1>
-      <p class="hero-description">
-        Je suis un architecte Fullstack chevronné, spécialisé dans la conception et l'implémentation d'applications
-        d'entreprise
-        hautement scalables avec **Spring Boot (microservices, sécurité JWT, Kafka)**. Mon expertise s'étend à la
-        création
-        d'interfaces utilisateur **Angular (Signals, SSR, Web Components)** fluides et réactives, enrichies par
-        l'intégration
-        de solutions d'**IA Générative (LLMs, RAG)** et optimisées par des pratiques **DevOps (Kubernetes, CI/CD)**
-        rigoureuses.
+      <p class="hero-description"> {{ 'hero.description' | translate }}
       </p>
 
       <div class="hero-actions">
-        <a [routerLink]="['/projects']" class="btn-primary">
-          Explorer mes projets
-        </a>
-
-        <a [routerLink]="['/contact']" class="btn-outline">
-          Me contacter
-        </a>
+        <a [routerLink]="['/projects']" class="btn-primary">{{ 'hero.cta_projects' | translate }}</a>
+        <a [routerLink]="['/contact']" class="btn-outline">{{ 'hero.cta_contact' | translate }}</a>
       </div>
     </div>
 
