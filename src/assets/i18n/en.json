@@ -68,7 +68,8 @@
     "categories": {
       "all": "All",
       "fullstack": "Fullstack",
-      "devops": "DevOps & Cloud"
+      "devops": "DevOps & Cloud",
+      "ai": "AI & Data"
     },
     "items": {
       "nexgen": {
