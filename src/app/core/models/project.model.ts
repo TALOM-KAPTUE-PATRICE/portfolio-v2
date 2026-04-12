@@ -1,4 +1,8 @@
-export type ProjectCategory = 'Fullstack' | 'AI & Data' | 'DevOps & Cloud';
+// Utilisation des clés de traduction pour les catégories
+export type ProjectCategory = 
+  | 'projects.categories.fullstack' 
+  | 'projects.categories.devops' 
+  | 'projects.categories.ai';
 
 export interface Project {
   id: string;

@@ -179,3 +179,10 @@ body {
     animation: none;
   }
 }
+
+/* Utilitaires de visibilité responsive */
+@media (max-width: 968px) {
+  .desktop-only {
+    display: none !important;
+  }
+}

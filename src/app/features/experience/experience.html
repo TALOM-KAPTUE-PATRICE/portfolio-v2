@@ -1,8 +1,8 @@
 <section id="experience" class="experience-section">
   <div class="container">
     <div class="section-header center">
-      <h2 class="gradient-text">Parcours Professionnel</h2>
-      <p>L'évolution de mon expertise au service de l'innovation.</p>
+      <h2 class="gradient-text">{{ 'experience.title' | translate }}</h2>
+      <p>{{ 'experience.subtitle' | translate }}</p>
     </div>
 
     <div class="timeline">
@@ -10,13 +10,13 @@
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <span class="period">{{ exp.period }}</span>
-            <h3>{{ exp.role }}</h3>
-            <h4 class="company">{{ exp.company }}</h4>
-            <p>{{ exp.description }}</p>
+            <span class="period">{{ exp.period | translate }}</span>
+            <h3>{{ exp.role | translate }}</h3>
+            <h4 class="company">{{ exp.company | translate }}</h4>
+            <p>{{ exp.description | translate }}</p>
             <ul class="achievement-list">
               @for (item of exp.achievements; track item) {
-                <li>{{ item }}</li>
+                <li>{{ item | translate }}</li>
               }
             </ul>
             <div class="tech-tags">

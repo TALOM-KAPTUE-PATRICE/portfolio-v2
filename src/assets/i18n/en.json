@@ -59,5 +59,86 @@
         "skill4": "Agentic Workflows (LangChain)"
       }
     }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of my most significant architectural achievements.",
+    "cta_code": "Source Code",
+    "cta_demo": "Live Demo",
+    "categories": {
+      "all": "All",
+      "fullstack": "Fullstack",
+      "devops": "DevOps & Cloud"
+    },
+    "items": {
+      "nexgen": {
+        "title": "NexGen E-Commerce Engine",
+        "description": "Intelligent commerce SaaS leveraging AI for dynamic stock optimization and customer personalization.",
+        "highlights": [
+          "Backend based on Hexagonal Architecture to isolate the business domain from technical details.",
+          "Recommendation system powered by embedding vectors stored in ChromaDB.",
+          "Ultra-performant Angular UI using zoneless rendering and signals for instant reactivity."
+        ]
+      },
+      "opsmind": {
+        "title": "OpsMind: K8s AI Orchestrator",
+        "description": "Intelligent agent supervising Kubernetes clusters to predict failures and proactively auto-scale resources.",
+        "highlights": [
+          "Real-time analysis of Prometheus metrics via a time-series model to anticipate load peaks.",
+          "Infrastructure as Code (IaC) developed with Terraform for multi-cloud deployment (AWS/Azure).",
+          "Integration of Kubernetes webhooks for automated remediation without human intervention."
+        ]
+      }
+    }
+  },
+  "experience": {
+    "title": "Professional Journey",
+    "subtitle": "A career path focused on technical excellence and continuous innovation.",
+    "items": {
+      "exp1": {
+        "role": "Fullstack Architect & AI Expert",
+        "company": "Innovative Tech Firm",
+        "period": "2023 - Present",
+        "description": "Design of a modular ERP system integrating predictive analysis and automation via LLMs.",
+        "achievements": [
+          "Migration from a monolithic architecture to Spring Cloud Microservices with asynchronous communication via Kafka.",
+          "Implementation of a semantic search engine based on RAG, increasing search accuracy by 65%.",
+          "Technical lead on the Angular Signals transition, reducing change detection cycles and improving UI FPS by 30%.",
+          "Full automation of Cloud provisioning via Terraform on AWS (EKS, RDS, S3)."
+        ]
+      },
+      "exp2": {
+        "role": "Fullstack Software Engineer",
+        "company": "Global Digital Agency",
+        "description": "Development of high-traffic e-commerce platforms with a focus on SEO optimization and high availability.",
+        "achievements": [
+          "Development of a highly reactive Angular interface with fine-grained Lazy Loading and Bundle Size optimization.",
+          "Implementation of unit and integration tests (Junit, Mockito, Cypress) ensuring 85% code coverage.",
+          "Optimization of JPA/Hibernate queries and Redis caching, halving API response times."
+        ]
+      }
+    }
+  },
+  "contact": {
+    "hero_title": "Building the future with the power of AI",
+    "availability": "Available for new opportunities",
+    "ready_title": "Ready to transform your ideas?",
+    "description": "Whether it's for a complex <strong>Spring Boot</strong> architecture, a high-performance <strong>Angular</strong> interface, or <strong>AI</strong> integration, I am here.",
+    "method_whatsapp_title": "WhatsApp Business",
+    "method_whatsapp_subtitle": "Reply in less than 2 hours",
+    "method_whatsapp_cta": "Chat now",
+    "method_email_title": "Professional Email",
+    "method_email_cta": "Send a proposal",
+    "form": {
+      "name_label": "Full Name",
+      "subject_label": "Project Subject",
+      "name_placeholder": "John Doe",
+      "subject_placeholder": "Ex: AI SaaS Development",
+      "message_label": "Your message",
+      "message_placeholder": "Briefly describe your technical needs...",
+      "submit": "Propel my message",
+      "success": "Message sent successfully! I'll get back to you very soon.",
+      "error": "An error occurred. Please use WhatsApp."
+    }
   }
 }
