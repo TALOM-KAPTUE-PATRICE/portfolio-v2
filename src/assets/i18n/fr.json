@@ -26,6 +26,17 @@
     "verified": "CI/CD Verifié",
     "location": "Fullstack & IA • Basé à Douala, CM (Remote Friendly)"
   },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "Ingénieur logiciel & Architecte de Solutions Intelligentes.",
+    "p1": "Spécialisé dans la stack <strong>Spring Boot & Angular</strong>, je conçois des architectures robustes capables de supporter des charges critiques. Mon expertise ne s'arrête pas au code : je maîtrise l'ensemble du cycle de vie logiciel, du provisionnement <strong>Cloud-Native</strong> via <strong>Terraform/Kubernetes</strong> à l'intégration de capacités cognitives via l'<strong>IA Générative</strong>.",
+    "p2": "Adepte de la <strong>Clean Architecture</strong> et du DDD (Domain-Driven Design), je mets un point d'honneur à livrer un code testable, maintenable et sécurisé (OAuth2/OIDC). Mon objectif est de transformer la complexité technique en interfaces fluides et performantes.",
+    "stats": {
+      "projects": "Projets livrés",
+      "uptime": "Uptime CI/CD"
+    },
+    "cv_cta": "Télécharger mon CV"
+  },
   "skills": {
     "title": "Mes Compétences",
     "subtitle": "Un stack technologique moderne pour des solutions scalables et intelligentes.",
