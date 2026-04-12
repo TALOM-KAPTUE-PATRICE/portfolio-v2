@@ -1,15 +1,14 @@
 <section id="contact" class="contact-section">
   <div class="container">
-    <h1 class="contact-hero-title">Construisons l'avenir avec la puissance de l'IA</h1>
+    <h1 class="contact-hero-title">{{ 'contact.hero_title' | translate }}</h1>
     
     <div class="section-header">
       <span class="availability-badge">
         <span class="pulse-dot"></span>
-        Disponible pour de nouvelles opportunités
+        {{ 'contact.availability' | translate }}
       </span>
-      <h1>Prêt à transformer vos idées ?</h1>
-      <p class="section-desc">Que ce soit pour une architecture **Spring Boot** complexe, une interface **Angular**
-        haute performance ou une intégration d'**IA**, je suis là.</p>
+      <h1>{{ 'contact.ready_title' | translate }}</h1>
+      <p class="section-desc" [innerHTML]="'contact.description' | translate"></p>
     </div>
 
     <div class="contact-wrapper">
@@ -23,9 +22,9 @@
             </svg>
           </div>
           <div class="card-info">
-            <h4>WhatsApp Business</h4>
-            <p>Réponse en moins de 2h</p>
-            <span class="link-label">Discuter maintenant</span>
+            <h4>{{ 'contact.method_whatsapp_title' | translate }}</h4>
+            <p>{{ 'contact.method_whatsapp_subtitle' | translate }}</p>
+            <span class="link-label">{{ 'contact.method_whatsapp_cta' | translate }}</span>
           </div>
         </div>
         <div class="contact-card">
@@ -36,9 +35,9 @@
             </svg>
           </div>
           <div class="card-info">
-            <h4>E-mail Professionnel</h4>
+            <h4>{{ 'contact.method_email_title' | translate }}</h4>
             <p>{{ contactEmail }}</p>
-            <a [href]="'mailto:' + contactEmail" class="link-label">Envoyer un dossier</a>
+            <a [href]="'mailto:' + contactEmail" class="link-label">{{ 'contact.method_email_cta' | translate }}</a>
           </div>
         </div>
       </div>
@@ -46,16 +45,16 @@
       <!-- Professional Form -->
       <form #contactForm="ngForm" (submit)="onSubmit($event, contactForm)" class="contact-form">
         <div class="form-group">
-          <label>Nom complet</label>
-          <input type="text" name="name" ngModel placeholder="John Doe" required>
+          <label>{{ 'contact.form.name_label' | translate }}</label>
+          <input type="text" name="name" ngModel [placeholder]="'contact.form.name_placeholder' | translate" required>
         </div>
         <div class="form-group">
-          <label>Objet du projet</label>
-          <input type="text" name="subject" ngModel placeholder="Ex: Développement SaaS IA" required>
+          <label>{{ 'contact.form.subject_label' | translate }}</label>
+          <input type="text" name="subject" ngModel [placeholder]="'contact.form.subject_placeholder' | translate" required>
         </div>
         <div class="form-group">
-          <label>Votre message</label>
-          <textarea name="message" ngModel placeholder="Décrivez brièvement vos besoins techniques..." rows="5"
+          <label>{{ 'contact.form.message_label' | translate }}</label>
+          <textarea name="message" ngModel [placeholder]="'contact.form.message_placeholder' | translate" rows="5"
             required></textarea>
         </div>
 
@@ -63,15 +62,15 @@
           @if (isSubmitting()) {
           <span class="loader"></span>
           } @else {
-          Propulser mon message
+          {{ 'contact.form.submit' | translate }}
           }
         </button>
 
         @if (submitStatus() === 'success') {
-        <div class="alert success">Message envoyé avec succès ! Je reviens vers vous très vite.</div>
+        <div class="alert success">{{ 'contact.form.success' | translate }}</div>
         }
         @if (submitStatus() === 'error') {
-        <div class="alert error">Une erreur est survenue. Veuillez utiliser WhatsApp.</div>
+        <div class="alert error">{{ 'contact.form.error' | translate }}</div>
         }
       </form>
     </div>

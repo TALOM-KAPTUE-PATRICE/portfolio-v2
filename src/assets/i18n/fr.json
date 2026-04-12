@@ -25,5 +25,120 @@
     "rights": "Tous droits réservés",
     "verified": "CI/CD Verifié",
     "location": "Fullstack & IA • Basé à Douala, CM (Remote Friendly)"
+  },
+  "skills": {
+    "title": "Mes Compétences",
+    "subtitle": "Un stack technologique moderne pour des solutions scalables et intelligentes.",
+    "categories": {
+      "frontend": {
+        "title": "Frontend Architecture",
+        "skill1": "Angular 21 (Signals, Zoneless)",
+        "skill2": "Architecture SSR & Hydratation",
+        "skill3": "Gestion d'État (NgRx/Signals)",
+        "skill4": "Micro-Frontends & Module Federation"
+      },
+      "backend": {
+        "title": "Backend Engineering",
+        "skill1": "Spring Boot 3.4 (Virtual Threads)",
+        "skill2": "Architecture Hexagonale/Clean",
+        "skill3": "Event-Driven (Kafka/RabbitMQ)",
+        "skill4": "Sécurité (Keycloak, OAuth2, JWT)"
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "skill1": "Orchestration Kubernetes (K8s)",
+        "skill2": "Infrastructure as Code (Terraform)",
+        "skill3": "Pipelines CI/CD (Jenkins, Actions)",
+        "skill4": "Observabilité (Prometheus, Grafana)"
+      },
+      "ai": {
+        "title": "IA & Systèmes Intelligents",
+        "skill1": "Intégration LLM (OpenAI, Anthropic)",
+        "skill2": "Génération Augmentée par Récupération (RAG)",
+        "skill3": "Bases de Données Vectorielles (Chroma, Pinecone)",
+        "skill4": "Workflows Agentiques (LangChain)"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projets Récents",
+    "subtitle": "Une sélection de mes réalisations architecturales les plus significatives.",
+    "cta_code": "Code Source",
+    "cta_demo": "Démo Live",
+    "categories": {
+      "all": "Tous",
+      "fullstack": "Fullstack",
+      "devops": "DevOps & Cloud"
+    },
+    "items": {
+      "nexgen": {
+        "title": "NexGen E-Commerce Engine",
+        "description": "SaaS de commerce intelligent exploitant l'IA pour l'optimisation dynamique des stocks et la personnalisation client.",
+        "highlights": [
+          "Backend basé sur l'Architecture Hexagonale pour isoler le domaine métier des détails techniques.",
+          "Système de recommandation propulsé par des vecteurs d'embeddings stockés dans ChromaDB.",
+          "UI Angular ultra-performante utilisant le rendu zoneless et les signaux pour une réactivité instantanée."
+        ]
+      },
+      "opsmind": {
+        "title": "OpsMind: K8s AI Orchestrator",
+        "description": "Agent intelligent supervisant les clusters Kubernetes pour prédire les pannes et auto-scaler les ressources de manière proactive.",
+        "highlights": [
+          "Analyse de métriques Prometheus en temps réel via un modèle de séries temporelles pour anticiper les pics de charge.",
+          "Infrastructure as Code (IaC) développée avec Terraform pour un déploiement multi-cloud (AWS/Azure).",
+          "Intégration de webhooks Kubernetes pour l'automatisation des remédiations sans intervention humaine."
+        ]
+      }
+    }
+  },
+  "experience": {
+    "title": "Parcours Professionnel",
+    "subtitle": "Une trajectoire centrée sur l'excellence technique et l'innovation continue.",
+    "items": {
+      "exp1": {
+        "role": "Architecte Fullstack & Expert IA",
+        "company": "Entreprise Tech Innovante",
+        "period": "2023 - Présent",
+        "description": "Conception d'un système ERP modulaire intégrant des capacités d'analyse prédictive et d'automatisation via LLMs.",
+        "achievements": [
+          "Migration d'une architecture monolithique vers des Microservices Spring Cloud avec communication asynchrone via Kafka.",
+          "Implémentation d'un moteur de recherche sémantique basé sur du RAG, augmentant la précision des recherches de 65%.",
+          "Lead technique sur la transition Angular Signals, réduisant les cycles de détection de changement et améliorant les FPS de l'UI de 30%.",
+          "Automatisation complète du provisionnement Cloud via Terraform sur AWS (EKS, RDS, S3)."
+        ]
+      },
+      "exp2": {
+        "role": "Ingénieur Logiciel Fullstack",
+        "company": "Global Digital Agency",
+        "description": "Développement de plateformes e-commerce à fort trafic avec focus sur l'optimisation SEO et la haute disponibilité.",
+        "achievements": [
+          "Développement d'une interface Angular hautement réactive avec gestion fine du Lazy Loading et optimisation du Bundle Size.",
+          "Mise en place de tests unitaires et d'intégration (Junit, Mockito, Cypress) assurant une couverture de code de 85%.",
+          "Optimisation des requêtes JPA/Hibernate et mise en cache Redis, divisant par deux le temps de réponse des APIs."
+        ]
+      }
+    }
+  },
+  "contact": {
+    "hero_title": "Construisons l'avenir avec la puissance de l'IA",
+    "availability": "Disponible pour de nouvelles opportunités",
+    "ready_title": "Prêt à transformer vos idées ?",
+    "description": "Que ce soit pour une architecture <strong>Spring Boot</strong> complexe, une interface <strong>Angular</strong> haute performance ou une intégration d'<strong>IA</strong>, je suis là.",
+    "method_whatsapp_title": "WhatsApp Business",
+    "method_whatsapp_subtitle": "Réponse en moins de 2h",
+    "method_whatsapp_cta": "Discuter maintenant",
+    "method_email_title": "E-mail Professionnel",
+    "method_email_cta": "Envoyer un dossier",
+    "form": {
+      "name_label": "Nom complet",
+      "subject_label": "Objet du projet",
+      "name_placeholder": "John Doe",
+      "subject_placeholder": "Ex: Développement SaaS IA",
+      "message_label": "Votre message",
+      "message_placeholder": "Décrivez brièvement vos besoins techniques...",
+      "submit": "Propulser mon message",
+      "success": "Message envoyé avec succès ! Je reviens vers vous très vite.",
+      "error": "Une erreur est survenue. Veuillez utiliser WhatsApp."
+    }
   }
 }

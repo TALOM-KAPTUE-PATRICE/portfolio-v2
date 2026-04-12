@@ -12,25 +12,20 @@
     </div>
 
     <div class="about-text">
-      <h2 class="gradient-text">À propos de moi</h2>
-      <h3 class="subtitle">Ingénieur logiciel & Architecte de Solutions Intelligentes.</h3>
-      <p>
-        Spécialisé dans la stack **Spring Boot & Angular**, je conçois des architectures robustes capables de supporter des charges critiques. 
-        Mon expertise ne s'arrête pas au code : je maîtrise l'ensemble du cycle de vie logiciel, du provisionnement **Cloud-Native** via 
-        **Terraform/Kubernetes** à l'intégration de capacités cognitives via l'**IA Générative**.
-      </p>
-      <p>
-        Adepte de la **Clean Architecture** et du DDD (Domain-Driven Design), je mets un point d'honneur à livrer un code testable, 
-        maintenable et sécurisé (OAuth2/OIDC). Mon objectif est de transformer la complexité technique en interfaces fluides et performantes.
-      </p>
+      <h2 class="gradient-text">{{ 'about.title' | translate }}</h2>
+      <h3 class="subtitle">{{ 'about.subtitle' | translate }}</h3>
+      
+      <p [innerHTML]="'about.p1' | translate"></p>
+      <p [innerHTML]="'about.p2' | translate"></p>
+
       <div class="about-stats">
         <div class="stat-item">
           <span class="stat-number">3+</span>
-          <span class="stat-label">Projets livrés</span>
+          <span class="stat-label">{{ 'about.stats.projects' | translate }}</span>
         </div>
         <div class="stat-item">
           <span class="stat-number">99%</span>
-          <span class="stat-label">Uptime CI/CD</span>
+          <span class="stat-label">{{ 'about.stats.uptime' | translate }}</span>
         </div>
       </div>
       <div class="about-actions">
@@ -41,7 +36,7 @@
             <polyline points="7 10 12 15 17 10" />
             <line x1="12" y1="15" x2="12" y2="3" />
           </svg>
-          Télécharger mon CV
+          {{ 'about.cv_cta' | translate }}
         </a>
       </div>
     </div>

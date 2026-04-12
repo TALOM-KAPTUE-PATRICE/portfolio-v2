@@ -3,27 +3,28 @@
   align-items: center;
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
-  padding: 4px;
+  padding: 2px;
   border-radius: 50px;
   cursor: pointer;
   position: relative;
-  width: 85px;
+  width: 74px;
   user-select: none;
   transition: all 0.3s ease;
 }
 
 .active-indicator {
   position: absolute;
-  width: 38px;
-  height: calc(100% - 8px);
+  width: 35px;
+  height: calc(100% - 4px);
   background: var(--primary);
   border-radius: 50px;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
+  left: 2px;
 }
 
 .active-indicator.is-en {
-  transform: translateX(39px);
+  transform: translateX(35px);
 }
 
 .lang-label {
