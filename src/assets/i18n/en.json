@@ -25,5 +25,39 @@
     "rights": "All rights reserved",
     "verified": "Verified CI/CD",
     "location": "Fullstack & AI • Based in Douala, CM (Remote Friendly)"
+  },
+  "skills": {
+    "title": "My Skills",
+    "subtitle": "A modern technological stack for scalable and intelligent solutions.",
+    "categories": {
+      "frontend": {
+        "title": "Frontend Architecture",
+        "skill1": "Angular 21 (Signals, Zoneless)",
+        "skill2": "SSR & Hydration Architecture",
+        "skill3": "State Management (NgRx/Signals)",
+        "skill4": "Micro-Frontends & Module Federation"
+      },
+      "backend": {
+        "title": "Backend Engineering",
+        "skill1": "Spring Boot 3.4 (Virtual Threads)",
+        "skill2": "Hexagonal/Clean Architecture",
+        "skill3": "Event-Driven (Kafka/RabbitMQ)",
+        "skill4": "Security (Keycloak, OAuth2, JWT)"
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "skill1": "Kubernetes Orchestration (K8s)",
+        "skill2": "Infrastructure as Code (Terraform)",
+        "skill3": "CI/CD Pipelines (Jenkins, Actions)",
+        "skill4": "Observability (Prometheus, Grafana)"
+      },
+      "ai": {
+        "title": "AI & Intelligent Systems",
+        "skill1": "LLM Integration (OpenAI, Anthropic)",
+        "skill2": "Retrieval-Augmented Generation (RAG)",
+        "skill3": "Vector Databases (Chroma, Pinecone)",
+        "skill4": "Agentic Workflows (LangChain)"
+      }
+    }
   }
 }

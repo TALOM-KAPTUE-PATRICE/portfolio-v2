@@ -2,27 +2,47 @@ import { SkillCategory } from '../skills.model';
 
 export const SKILLS_DATA: SkillCategory[] = [
   {
-    title: 'Frontend Architecture',
+    titleKey: 'skills.categories.frontend.title',
     icon: 'angular',
     color: 'oklch(65% 0.2 260)',
-    skills: ['Angular 21 (Signals, Zoneless)', 'Architecture SSR & Hydratation', 'State Management (NgRx/Signals)', 'Micro-Frontends & Module Federation']
+    skillKeys: [
+      'skills.categories.frontend.skill1',
+      'skills.categories.frontend.skill2',
+      'skills.categories.frontend.skill3',
+      'skills.categories.frontend.skill4'
+    ]
   },
   {
-    title: 'Backend Engineering',
+    titleKey: 'skills.categories.backend.title',
     icon: 'spring',
     color: 'oklch(70% 0.15 140)',
-    skills: ['Spring Boot 3.4 (Virtual Threads)', 'Architecture Hexagonale/Clean', 'Event-Driven (Kafka/RabbitMQ)', 'Security (Keycloak, OAuth2, JWT)']
+    skillKeys: [
+      'skills.categories.backend.skill1',
+      'skills.categories.backend.skill2',
+      'skills.categories.backend.skill3',
+      'skills.categories.backend.skill4'
+    ]
   },
   {
-    title: 'Cloud & DevOps',
+    titleKey: 'skills.categories.cloud.title',
     icon: 'devops',
     color: 'oklch(60% 0.15 30)',
-    skills: ['Orchestration Kubernetes (K8s)', 'Infrastructure as Code (Terraform)', 'Pipelines CI/CD (Jenkins, Actions)', 'Observabilité (Prometheus, Grafana)']
+    skillKeys: [
+      'skills.categories.cloud.skill1',
+      'skills.categories.cloud.skill2',
+      'skills.categories.cloud.skill3',
+      'skills.categories.cloud.skill4'
+    ]
   },
   {
-    title: 'AI & Intelligent Systems',
+    titleKey: 'skills.categories.ai.title',
     icon: 'ai',
     color: 'oklch(70% 0.15 320)',
-    skills: ['Intégration LLM (OpenAI, Anthropic)', 'Retrieval-Augmented Generation (RAG)', 'Vector DBs (Chroma, Pinecone)', 'Agentic Workflows (LangChain)']
+    skillKeys: [
+      'skills.categories.ai.skill1',
+      'skills.categories.ai.skill2',
+      'skills.categories.ai.skill3',
+      'skills.categories.ai.skill4'
+    ]
   }
 ];

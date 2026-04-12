@@ -1,6 +1,9 @@
 export interface SkillCategory {
-  title: string;
+  titleKey: string; // Clé de traduction pour le titre de la catégorie
   icon: string;
-  skills: string[];
-  color: string; // hex ou oklch
+  color: string;
+  skillKeys: string[]; // Tableau de clés de traduction pour les compétences
+  // Ces propriétés seront remplies dynamiquement après traduction
+  title?: string;
+  skills?: string[];
 }
